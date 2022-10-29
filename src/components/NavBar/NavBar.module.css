@@ -5,7 +5,7 @@
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   justify-items: flex-end;
   position: fixed; 
   padding: 14px 21px;
@@ -14,7 +14,9 @@
 }
 
 .nav img {
-  width: 50px;
+  height: 65px;
+  width: 85px;
+  margin-bottom: 10%;
 }
 
 .nav ul {
@@ -23,18 +25,22 @@
   display: flex;
   list-style: none;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: .75em;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   font-family: 'Montserrat', sans-serif;
   color: white;
   text-decoration: none;
+  padding: 0;
 }
 
 .nav li {
   text-align: center;
-  margin: 0 24px;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
 }
+
 .nav h2 {
   font-size: 1.4em;
   margin: 0 24px 0 42px;
@@ -44,7 +50,11 @@
   font-family: 'Montserrat', sans-serif;
   color: rgb(240, 210, 189);
   text-decoration: none;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 0;
 }
+
 .nav a:hover {
   color: rgb(87, 74, 226);
 }

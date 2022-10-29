@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import styles from './NavBar.module.css'
-import DefaultBirdPhoto from '../../assets/branding/AVI-nav-logo.svg'
+import DefaultBirdPhoto from '../../assets/branding/AVI-nav-logo.png'
 
 const NavBar = ({ user, handleLogout}) => {
 
