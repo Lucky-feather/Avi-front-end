@@ -1,0 +1,81 @@
+.signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup {
+  width: 50%;
+  /* height: 250px; */
+  padding: 14px 21px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background-color: var(--card-background);
+  box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../assets/branding/AVI-notecard-REVISED.png');
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.signup h1 {
+  text-align: center;
+  padding: 15px;
+  color: black;
+}
+
+.signup button {
+  font-size: 1.5rem;
+  justify-content: center;
+  width: 100px
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a :hover{
+  color: white;
+}
+
+input {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* .button {
+  background-image: none;
+} */
+
+/* .signup div {
+display: flex;
+flex-direction: row;
+width: 100%;
+background-image: none;
+box-shadow: none;
+justify-content: space-evenly;
+} */
+
+@media only screen and (min-width: 900px) {
+  .signup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .signup {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .signup {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

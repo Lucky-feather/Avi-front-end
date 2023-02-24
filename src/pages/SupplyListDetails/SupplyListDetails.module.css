@@ -1,0 +1,70 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.supplylist {
+  width: 100%;
+  padding: 14px 21px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../assets/branding/AVI-notecard-REVISED.png');
+  background-position: center;
+  background-size: cover;
+  margin-top: 2%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.supplylist article, .container > section {
+  width: 100%;
+  padding: 21px;
+  display: flex;
+  max-width: 700px;
+  flex-direction: column;
+}
+
+.supplylist  p {
+  /* text-indent: 21px; */
+  text-align-last: left;
+	/* word-break: break-all; */
+}
+
+.supplylist  header {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supplylist  span button, .container span a {
+  margin: 0;
+  /* width: 20%; */
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  margin-left: 7px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.supplylist  span button, .container span a  {
+  cursor: pointer;
+}
+
+.supplylist  > section article {
+  padding: 0;
+  width: 100%;
+  min-height: 140px;
+  border-radius: 5px;
+  margin: 4px 0px 14px;
+}
+
+.supplylist  > section h1 {
+  font-size: 21px;
+}

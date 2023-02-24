@@ -1,0 +1,67 @@
+.event {
+  width: 100%;
+  /* height: 250px; */
+  padding: 14px 21px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background-color: var(--card-background);
+  box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../assets/branding/AVI-notecard-REVISED.png');
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.event header {
+  margin-bottom: 14px;
+}
+
+.event span {
+  display: flex;
+  align-items: center;
+  margin: 7px 0px 12px 0px;
+  justify-content: space-between;
+}
+
+.event span img {
+  margin: 0;
+  width: 32px;
+	height: 32px;
+  opacity: .8;
+  padding: 3px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+
+.event h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.event p {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  overflow: hidden;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+	word-break: break-all;
+  /* text-align-last: left; */
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  text-align: left;
+  margin: 0 15px 15px 3rem;
+}
+

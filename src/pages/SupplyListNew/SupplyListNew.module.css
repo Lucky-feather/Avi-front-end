@@ -1,0 +1,33 @@
+.container {
+  height: 100%;
+  display: flex;
+  padding: 28px 21px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container input, textarea, select, button { 
+  width: 100%;
+  padding: 14px;
+  font-size: 14px;
+  resize: vertical;
+  border-radius: 5px;
+  margin: 7px 0px 14px 0px;
+  outline: 1px solid black;
+}
+
+.container textarea {
+  min-height: 50px;
+}
+
+.container label {
+  font-weight: 600;
+  margin: 7px 0px 14px 0px;
+}
+
+.container button {
+  color: black;
+  font-weight: 600;
+  margin: 21px 0px 0px 0px;
+  background: var(--primary);
+}

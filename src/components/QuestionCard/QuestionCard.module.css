@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  height: 220px;
+  padding: 18px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background-color: var(--card-background);
+  box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -moz-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: -1px 5px 19px -5px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-image: url('../../assets/branding/AVI-notecard-REVISED.png');
+  /* background-position: center; */
+  background-size: cover;
+}
+
+
+.container span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px 0px 12px 0px;
+
+}
+
+/* .container span img {
+  margin: 0;
+  width: 32px;
+	height: 32px;
+  opacity: .8;
+  padding: 3px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+} */
+
+.container h1 {
+  margin: 0;
+  padding: 5%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 
+.container div > img {
+  width: 30px;
+	height: 30px;
+	object-fit: cover;
+}
+
+.container div section img {
+  width: 14px;
+	height: 14px;
+} */ 

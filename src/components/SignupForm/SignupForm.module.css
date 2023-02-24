@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.label,
+.button {
+}
+
+.inputContainer {
+  margin-bottom: 1rem;
+}

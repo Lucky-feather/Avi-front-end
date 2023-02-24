@@ -1,0 +1,97 @@
+.profileDetails {
+  height: 100%;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--card-background);
+
+}
+
+.profileDetails article, .profileDetails > section {
+  width: 100%;
+  padding: 21px;
+  display: flex;
+  max-width: 700px;
+  flex-direction: column;
+}
+
+.profileDetails p {
+  text-indent: 21px;
+  text-align-last: left;
+	word-break: break-all;
+}
+
+.profileDetails header {
+  display: flex;
+  margin-bottom: 21px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profileDetails h1 {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.profileDetails h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.profileDetails span {
+  width: 100%;
+  display: flex;
+	margin-top: 10px;
+  align-items: center;
+}
+
+.profileDetails div {
+  width: 100%;
+}
+
+.profileDetails span button, .profileDetails span a {
+  margin: 0;
+  width: 20%;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  margin-left: 7px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+.profileDetails span button, .profileDetails span a  {
+  cursor: pointer;
+}
+
+.profileDetails > section article {
+  padding: 0;
+  width: 100%;
+  min-height: 140px;
+  border-radius: 5px;
+  margin: 4px 0px 14px;
+}
+
+.profileDetails > section h1 {
+  color: rgb(99, 124, 164);
+  font-size: 24px;
+}
+
+.profileDetails h3 {
+  font-size: 24px;
+  color: rgb(113, 142, 188);
+}
+
+.profileDetails h3:hover {
+  color: rgb(87, 74, 226);
+}
+
+.profileDetails > section article p {
+  text-indent: 0px;
+}

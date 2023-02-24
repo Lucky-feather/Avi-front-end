@@ -1,0 +1,31 @@
+.profilesList {
+  gap: 14px;
+  width: 100%;
+  display: grid;
+  padding: 21px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.profilesList article {
+  background-image: url('../../assets/branding/AVI-notecard-no-logo.png');
+}
+
+
+@media only screen and (min-width: 900px) {
+  .profilesList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .profilesList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .profilesList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
