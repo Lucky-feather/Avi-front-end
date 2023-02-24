@@ -1,12 +1,12 @@
-import styles from './AnswerCard.module.css'
+import './AnswerCard.module.css'
 
 const AnswerCard = ({ answer }) => {
   return (
-    <article className={styles.container}>
+    <article className='answerCard'>
       <header key ={answer.id}>
-      </header>
       {console.log(answer.author.name)}
       <h4>{answer.text}</h4>
+      </header>
     </article>
   )
 }

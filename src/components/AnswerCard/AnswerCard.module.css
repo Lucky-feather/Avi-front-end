@@ -10,19 +10,19 @@ article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url('../../assets/branding/AVI-notecard-REVISED.png');
+  background-image: url('../../assets/branding/AVI-notecard-revised.png');
   background-position: center;
   background-size: cover;
 }
 
 
-/* .container span {
+article{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 7px 0px 12px 0px;
-
-} */
+  margin: 20px 0px 12px 0px;
+  
+}
 
 
 h4 {

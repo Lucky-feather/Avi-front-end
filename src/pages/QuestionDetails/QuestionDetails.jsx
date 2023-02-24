@@ -44,10 +44,10 @@ if (!question) return <Loading />
         </header>
         <p>{question.text}</p>
       </article>
-      <section>
+      <section id='responses'>
         <h2>Responses</h2>
         <NewAnswer handleAddAnswer={handleAddAnswer}/>
-        <h3><Answers answers ={question.answers} user={props.user} /></h3>
+        <h3 id='answerCard'><Answers answers ={question.answers} user={props.user} /></h3>
       </section>
       <span>
         <Link to={`/questions`} state={question}>Back to all field notes</Link>

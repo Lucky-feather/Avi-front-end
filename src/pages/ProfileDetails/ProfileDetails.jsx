@@ -1,6 +1,6 @@
   import styles from "./ProfileDetails.module.css"
   import { useState, useEffect } from "react"
-  import { useParams, Link } from "react-router-dom"
+  import { useParams } from "react-router-dom"
   import BirdCard from "../../components/BirdCard/BirdCard"
   import ProfileIcon from '../../assets/branding/profile.png'
 

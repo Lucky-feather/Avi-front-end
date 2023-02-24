@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-image: url('../../assets/branding/AVI-notecard-REVISED.png');
+  background-image: url('../../assets/branding/AVI-notecard-revised.png');
   /* background-position: center; */
   background-size: cover;
 }
@@ -44,4 +44,4 @@
 .container div section img {
   width: 14px;
 	height: 14px;
-} */ 
+}

@@ -23,7 +23,7 @@ header {
   justify-content: center;
   padding: 21px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  background-image: url('../../assets/branding/AVI-notecard-REVISED.png');
+  background-image: url('../../assets/branding/AVI-notecard-revised.png');
 } 
 
 .container {
@@ -70,7 +70,12 @@ span {
 }
 
 h2 {
-  margin: 10px;
+  margin: 50px 10px 10px;
+}
+
+#answerCard {
+  border: 5px solid red;
+  margin-top: 50px;
 }
 
 form {
