@@ -36,6 +36,8 @@ AVI App: [Link here](https://avi-birding.netlify.app/)
 
 ## Screenshots of AVI app:
 
+![image](https://user-images.githubusercontent.com/111081232/198421323-19cebb89-9040-4fc9-8942-b78f0549d6d6.png)
+
 ***
 
 ## Technologies used:

@@ -11,16 +11,14 @@ const ProfileCard = ({ profile }) => {
     <>
         <article className={styles.profileCard}>
           <header>
-            <span>
-              {profile.photo ?
-              <img src={profile.photo} alt="User's avatar" style={{width: "40px"}}/>
-              :
-              <img src={ProfileIcon} alt="Default avatar" style={{width: "40px"}}/>}
-            </span>
+            {profile.photo ?
+            <img src={profile.photo} alt="User's avatar"/>
+            :
+            <img src={ProfileIcon} alt="Default avatar" />}
+            <Link to={`/profiles/${profile._id}`}>
+              <h3>{profile.name.toUpperCase()}</h3>
+            </Link>
           </header>
-        <Link to={`/profiles/${profile._id}`}>
-          <h3>{profile.name.toUpperCase()}</h3>
-        </Link>
         </article>
     </>
   )

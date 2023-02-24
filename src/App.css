@@ -4,4 +4,20 @@ body {
 
 main {
   font-family:'Courier Prime', monospace;
+  padding: 80px;
+}
+
+button {
+  /* width: 12em;
+  height: 2em; */
+  font-family:'Courier Prime', monospace;
+  font-weight: 600;
+  font-size: 24px;
+  align-content: center;
+  border: none;
+  /* background-color: rgb(110, 117, 124); */
+}
+
+main {
+  font-family:'Courier Prime', monospace;
 }

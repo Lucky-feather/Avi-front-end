@@ -1,13 +1,29 @@
-.birdDetails {
-  height: 100%;
+
+.birdDetails div {
   display: flex;
-  overflow: scroll;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: var(--card-background);
+  flex-direction: row;
 }
 
-.birdDetails article, .birdDetails > section {
+.birdDetails {
+  width: 60%;
+  height: 500px;
+  padding: 100px 21px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../assets/branding/AVI-notecard-no-logo.png');
+  background-position: center;
+  background-size: cover;
+  margin-top: 5%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 20px;
+}
+
+.birdDetails article, .container > section {
   width: 100%;
   padding: 21px;
   display: flex;
@@ -15,62 +31,66 @@
   flex-direction: column;
 }
 
-.birdDetails p {
-  text-indent: 21px;
+.birdDetails  p {
   text-align-last: left;
 	word-break: break-all;
+  font-size: 18px;
 }
 
 .birdDetails header {
   display: flex;
-  margin-bottom: 21px;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.birdDetails h1 {
-  margin: 0;
-  margin-bottom: 7px;
-  font-size: 24px;
-}
-
-.birdDetails h3 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 600;
   margin-bottom: 10px;
-  color: var(--primary);
+  flex-direction: column;
+  align-items: left;
+  padding: 0 0 0 60px;
+  block-size: fit-content;
+  height: fit-content;
+}
+
+.birdDetails img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
 }
 
 .birdDetails span {
-  width: 100%;
   display: flex;
-	margin-top: 10px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.birdDetails button {
+  width: 80px;
+  height: 35px;
+  padding: 18px 18px 18px 35px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family:'Courier Prime', monospace;
+  color: rgb(240, 210, 189);
+  background-color: #6c757d;
+  border: solid 3px  #6c757d;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.birdDetails div {
-  width: 100%;
-}
-
-.birdDetails span button, .birdDetails span a {
+.birdDetails  span button, .container span a {
   margin: 0;
-  width: 20%;
   padding: 5px;
   font-size: 14px;
   font-weight: 500;
   background: none;
   margin-left: 7px;
   border-radius: 5px;
-  text-align: center;
-  border: 1px solid var(--border);
+  text-decoration: none;
 }
 
-.birdDetails span button, .birdDetails span a  {
+.birdDetails  span button, .container span a  {
   cursor: pointer;
 }
 
-.birdDetails > section article {
+.birdDetails  > section article {
   padding: 0;
   width: 100%;
   min-height: 140px;
@@ -78,18 +98,10 @@
   margin: 4px 0px 14px;
 }
 
-.birdDetails > section h1 {
+.birdDetails  > section h1 {
   font-size: 21px;
 }
 
-.birdDetails h3 {
-  color: rgb(99, 124, 164);
-}
-
-.birdDetails h3:hover {
-  color: rgb(87, 74, 226);
-}
-
-.birdDetails > section article p {
-  text-indent: 0px;
+.birdDetails a:hover{
+  color: white; 
 }

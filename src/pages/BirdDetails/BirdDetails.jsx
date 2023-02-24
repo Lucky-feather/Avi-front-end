@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { useParams, Link } from "react-router-dom"
+import BirdIcon from '../../assets/branding/profile.png'
 
 // components
 import Loading from "../Loading/Loading"
@@ -27,19 +28,29 @@ const BirdDetails = (props) => {
   return (
     <main className={styles.birdDetails}>
       <article>
-        <header>
-          <h1>{bird.name.toUpperCase()}</h1>
-          <p>{bird.description}</p>
-          <span>
-            {bird.author._id === props.user.profile &&
-              <>
-                <Link to={`/birds/${id}/edit`} state={bird}>edit</Link>
-                <button onClick={() => props.handleDeleteBird(id)}>delete</button>
-              </>
-            }
-          </span>
-          <Link to={`/birds`} state={bird}>Back to bird list</Link>
-        </header>
+        <div>
+          {
+            bird.photo ?
+            <img src={bird.photo} className="birdPhoto" alt={bird.name} />
+            :
+            <img src={BirdIcon} alt="Default bird" />
+          }
+          <header>
+            <h1>{bird.name.toUpperCase()}</h1>
+            <p>{bird.description}</p>
+            <span>
+              {bird.author._id === props.user.profile &&
+                <>
+                  <Link to={`/birds/${id}/edit`} state={bird}>edit</Link>
+                  <button onClick={() => props.handleDeleteBird(id)}>delete</button>
+                </>
+              }
+            </span>
+            <span>
+              <Link to={`/birds`} state={bird}>Back to bird list</Link>
+            </span>
+          </header>
+        </div>
       </article>
     </main>
   )

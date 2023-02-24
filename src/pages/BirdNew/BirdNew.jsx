@@ -23,8 +23,9 @@ const BirdNew = (props) => {
   }
 
   return (
-    <main className={styles.container}>
-      <form onSubmit={handleSubmit}>
+    // <main className={styles.birdNew}>
+      <form onSubmit={handleSubmit} className={styles.birdNew}>
+        <br></br>
         <label htmlFor="title-input">Bird Name</label>
         <input
           required
@@ -55,10 +56,11 @@ const BirdNew = (props) => {
 						name="photo"
 						onChange={handleChangePhoto}
 					/>
-
+          <br></br>
         <button type="submit">save</button>
+        <br></br>
       </form>
-    </main>
+    // </main>
   )
 }
 

@@ -30,16 +30,14 @@ if (!question) return <Loading />
   return (
     <main className={styles.container}>
       <article>
-          {console.log('author here', question.author)}
-        <header>
-          
+        <header>      
           <h3>{question.question}</h3>
-          <span>
+          <p>by {question.author.name}</p>
+          <span className={styles.btns}>
             {question.author._id === props.user.profile && 
-          <>
-                <Link to={`/questions/${id}/edit`} state={question}>Edit</Link>
-
-                <button onClick={() => props.handleDeleteQuestion(id)}>Delete</button>
+            <>
+            <button onClick={() => props.handleDeleteQuestion(id)}>Delete</button>
+            <h2><Link to={`/questions/${id}/edit`} state={question}>Edit</Link></h2>
               </> 
             }
           </span>
@@ -47,14 +45,13 @@ if (!question) return <Loading />
         <p>{question.text}</p>
       </article>
       <section>
-  <h1>Comments</h1>
-  <NewAnswer handleAddAnswer={handleAddAnswer}/>
-  <Answers answers ={question.answers} user={props.user} />
-  {console.log('QQQ',question)}
-</section>
-<span>
-<Link to={`/questions`} state={question}>Back to all field notes</Link>
-</span>
+        <h2>Responses</h2>
+        <NewAnswer handleAddAnswer={handleAddAnswer}/>
+        <h3><Answers answers ={question.answers} user={props.user} /></h3>
+      </section>
+      <span>
+        <Link to={`/questions`} state={question}>Back to all field notes</Link>
+      </span>
     </main>
   )
 }

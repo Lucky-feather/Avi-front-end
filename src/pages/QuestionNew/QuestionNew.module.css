@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 
-.container input, textarea, select, button { 
+.container input, textarea { 
   width: 100%;
   padding: 14px;
   font-size: 14px;
@@ -20,7 +20,7 @@
 }
 
 .container textarea {
-  min-height: 50px;
+  min-height: 100px;
 }
 
 .container label {
@@ -29,21 +29,16 @@
 }
 
 .container button {
-  color: green;
-  font-weight: 600;
-  margin: 21px 0px 0px 0px;
-  background: var(--primary);
+  width: 100px;
+  height: 75%;
+  padding: 18px 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family:'Courier Prime', monospace;
+  color: rgb(240, 210, 189);
+  background-color: #6c757d;
 }
 
-.container a {
-  border: none;
-  font-size: 14px;
-  background: none;
-  font-weight: 500;
-  margin-top: 14px;
-  text-align: center;
-  color: rgb(200, 200, 200);
-}
 
 input:focus, select:focus, textarea:focus {
   outline: none;

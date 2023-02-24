@@ -12,12 +12,12 @@ const BirdCard = (props) => {
       <article className={styles.birdCard}>
           <Link to={`/birds/${props.bird._id}`}><h1>{props.bird.name.toUpperCase()}</h1></Link>
         <header>
-          {/* <span> */}
-          {props.bird.photo ?
+          {
+            props.bird.photo ?
             <img src={props.bird.photo} className="birdPhoto" alt={props.bird.name} />
             :
-            <img src={BirdIcon} alt="Default bird" />}
-          {/* </span> */}
+            <img src={BirdIcon} alt="Default bird" />
+          }
 
         <div>
         {(location.pathname ==='/birds') || (location.pathname !=='/birds' && props.wishlist ) ?
